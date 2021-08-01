@@ -1,0 +1,5 @@
+name: BanSystem
+main: cn.cookiestudio.bansystem.BanSystem
+version: "1.0.0"
+author: daoge_cmd
+api: ["1.0.11"]

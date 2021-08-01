@@ -1,0 +1,2 @@
+bannedPlayerJoinMessage: "You have been banned by this server;\nTime: {time} minute" #封禁玩家进服被t的提示，{time}是封禁时间
+banPlayerMessage: "Player {player} have been banned for {time} minute by operator {op}" #封禁提示，{player}是被封禁玩家，{time}是封禁时间,{op}是执行封禁的人
