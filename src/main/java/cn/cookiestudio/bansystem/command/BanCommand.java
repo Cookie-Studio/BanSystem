@@ -24,6 +24,10 @@ public class BanCommand extends Command {
             commandSender.sendMessage("This command cannot use in console");
             return true;
         }
+        if (!commandSender.isOp()){
+            commandSender.sendMessage("I'm sorry,but you haven't op to run this command");
+            return true;
+        }
         Player sender = (Player)commandSender;
         BFormWindowCustom.getBuilder()
                 .addElements(new ElementDropdown("选择玩家：", Server.getInstance().getOnlinePlayers().values().stream().map(p -> p.getName()).collect(Collectors.toList())))

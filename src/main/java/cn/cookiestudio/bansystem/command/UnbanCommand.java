@@ -24,6 +24,10 @@ public class UnbanCommand extends Command {
             commandSender.sendMessage("This command cannot use in console");
             return true;
         }
+        if (!commandSender.isOp()){
+            commandSender.sendMessage("I'm sorry,but you haven't op to run this command");
+            return true;
+        }
         BFormWindowSimple.getBuilder()
                 .setButtons(BanSystem.getInstance().getBanPlayerPool().getStorage().getKeys().stream().map(str -> new ElementButton(str,new ElementButtonImageData("path","textures/ui/icon_steve"))).collect(Collectors.toList()))
                 .setTitle("Unban Player")
